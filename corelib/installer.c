@@ -72,7 +72,7 @@ static void prepare_uboot_script(struct swupdate_cfg *cfg, const char *script)
 {
 	int fd;
 	struct uboot_var *ubootvar;
-	char buf[128];
+	char buf[MAX_UBOOT_SCRIPT_LINE_LENGTH];
 
 	fd = openfileoutput(script);
 
